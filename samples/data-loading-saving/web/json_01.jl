@@ -5,12 +5,22 @@
 import Pkg; 
 Pkg.add("HTTP")
 Pkg.add("JSON")
+Pkg.add("JSON")
+Pkg.add("JSON3")
+Pkg.add("LazyJSON")
+
 
 import HTTP
 import JSON
+import JSON;
+import JSON3;
+import LazyJSON;
 
 using JSON
 using HTTP
+using JSON;
+using JSON3;
+using LazyJSON;
 
 # tags
 # https://api.github.com/repos/xamarin/AndroidX/tags
@@ -25,5 +35,12 @@ resp = HTTP.get(url)
 str = String(resp.body)
 println("str = ", str)
 
-jobj = JSON.parse(str)
-println("jobj = ", jobj)
+jobj_JSON = JSON.parse(str)
+println("jobj_JSON = ", jobj_JSON)
+
+jobj_JSON3 = JSON3.read(str)
+println("jobj_JSON3 = ", jobj_JSON)
+
+
+jobj_LazyJSON = LazyJSON.value(str)
+println("jobj_LazyJSON = ", jobj_LazyJSON)
