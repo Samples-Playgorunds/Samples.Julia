@@ -22,13 +22,6 @@ using JSON;
 using JSON3;
 using LazyJSON;
 
-# tags
-# https://api.github.com/repos/xamarin/AndroidX/tags
-# https://api.github.com/repos/xamarin/Essentials/tags
-# releases
-# https://api.github.com/repos/xamarin/AndroidX/releases
-# https://api.github.com/repos/xamarin/Essentials/releases
-
 url = "https://raw.githubusercontent.com/xamarin/AndroidX/20200915-mono.cecil-fix/config.json"
 resp = HTTP.get(url)
 
