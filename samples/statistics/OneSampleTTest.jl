@@ -1,6 +1,5 @@
-#import Pkg; 
-#Pkg.add("HypothesisTests")
-#Pkg.add("Random")
+# https://docs.julialang.org/en/v1/manual/code-loading/
+include("../packages/statistics.jl")
 
 using HypothesisTests, Random 
 

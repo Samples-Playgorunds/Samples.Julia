@@ -3,10 +3,10 @@
 
 # ERROR: LoadError: ArgumentError: Package DataFrames not found in current path:
 # - Run `import Pkg; Pkg.add("DataFrames")` to install the DataFrames package.
-# import Pkg; Pkg.add("DataFrames")
-# import Pkg; 
-# Pkg.add("CSV")
-# Pkg.add("StatsBase")
+import Pkg; Pkg.add("DataFrames")
+import Pkg; 
+Pkg.add("CSV")
+Pkg.add("StatsBase")
 
 #-----------------------------------------------------------------------------------------------
 using DataFrames, CSV, Statistics, StatsBase
