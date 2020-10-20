@@ -1,12 +1,13 @@
 import Pkg
 Pkg.instantiate() # downloads all dependencies for the current project
 
-Pkg.add("RDatasets")
+Pkg.add("Plots")
 
-using DataFrames, CSV, RDatasets, Statistics
+
+using Plots, DataFrames, CSV
 
 df = CSV.read("../externals/Core.Math.Data/data/Pejcic_318.csv", copycols = true)
 
-println(Statistics.cor(df.ATV, df.ATT))
+a = df.ATT # use something to plot;
 
-# https://docs.julialang.org/en/v1/stdlib/Statistics/ #
+display(plot(histogram(a)));
