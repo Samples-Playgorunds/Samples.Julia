@@ -12,6 +12,7 @@ using UrlDownload, DataFrames, CSV
 # df = download(url,  "data/covid-current.json")
 
 url = "https://covidtracking.com/api/v1/states/current.json"
+
 df = urldownload(url) |> DataFrame
 
 
