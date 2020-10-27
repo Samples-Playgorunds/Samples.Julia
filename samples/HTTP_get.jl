@@ -10,7 +10,7 @@ Pkg.add("StatsPlots")
 
 using HTTP, JSON, Plots, StatsPlots
 
-resp = HTTP.get("https://api.covid19api.com/country/finland/status/confirmed")
+resp = HTTP.get("https://api.covid19api.com/country/croatia/status/confirmed")
 str = String(resp.body)
 jobj = JSON.Parser.parse(str)
 
