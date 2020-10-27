@@ -1,7 +1,7 @@
 # Samples.Julia
 
+Samples.Julia repository - samples/playground for Julia programming language
 
-Samples.Julia
 
 Clone submodules (with data):
 
