@@ -1,5 +1,5 @@
 
-file_path = "../../../../../../externals/Core.Math.Data/data/Pejcic_318.csv"
+file_path = "../../../../../../externals/Core.Math.Data/data/HolisticWare.Core.Sample.Data/CSV/Pejcic_318.csv"
 
 data = open(file_path, "r") do f
     filecontent_as_string_local = read(f,String)
@@ -8,7 +8,7 @@ data = open(file_path, "r") do f
 # following line would crash
 # error:
 # ERROR: LoadError: UndefVarError: filecontent_as_string_local not defined
-print(filecontent_as_string_local)
+# print(filecontent_as_string_local)
 
 
 data = open(file_path, "r") do f

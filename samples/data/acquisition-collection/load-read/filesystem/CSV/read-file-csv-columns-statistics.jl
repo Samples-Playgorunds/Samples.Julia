@@ -6,7 +6,7 @@ Pkg.add("CSV")
 Pkg.add("DataFrames")
 Pkg.add("StatsBase")
 
-file_path = "../../../../../../externals/Core.Math.Data/data/Pejcic_318.csv"
+file_path = "../../../../../../externals/Core.Math.Data/data/HolisticWare.Core.Sample.Data/CSV/Pejcic_318.csv"
 
 using DataFrames, CSV, Statistics, StatsBase
 

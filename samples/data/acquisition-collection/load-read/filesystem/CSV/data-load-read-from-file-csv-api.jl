@@ -11,7 +11,7 @@ import CSV
 using CSV
 #------------------------------------------------------------------------------------
 
-file_path_csv = "../../../../../../externals/Core.Math.Data/data/Pejcic_318.csv"
+file_path_csv = "../../../../../../externals/Core.Math.Data/data/HolisticWare.Core.Sample.Data/CSV/Pejcic_318.csv"
 
 
 data = CSV.read(file_path_csv, copycols = true)
