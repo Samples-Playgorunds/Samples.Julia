@@ -7,9 +7,14 @@ using JSON
 dict = Dict()
 open("contacts.json", "r") do f
     global dict
-    dicttxt = readstring(f)  # file information to string
+    dicttxt = read(f, String)  # file information to string
     dict=JSON.parse(dicttxt)  # parse and transform data
 end
-for (values) in dict["emergencyContacts"]
-         println(values)
+
+first_names = String[]
+
+for contact in dict["emergencyContacts"]
+    push!(first_names, split(contact["name"]," ")[1])
 end
+
+first_names
