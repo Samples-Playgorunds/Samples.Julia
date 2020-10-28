@@ -1,4 +1,9 @@
-import JSON
+import Pkg
+Pkg.instantiate() # downloads all dependencies for the current project
+Pkg.add("JSON")
+
+using JSON
+
 dict = Dict()
 open("contacts.json", "r") do f
     global dict
