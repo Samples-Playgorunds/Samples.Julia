@@ -12,7 +12,7 @@ data = CSV.read("../externals/Core.Math.Data/data/Pejcic_318.csv", copycols = tr
 # println("0.95 quantile: ", quantile(data, 0.95))
 # println("Interquartile range: ", iqr(data),"\n")
 
-for col in eachcol(data,true); 
+for col in eachcol(data); 
     if (eltype(col[2]) <: Real) println(mean(col[2]));   
     end; 
 end;

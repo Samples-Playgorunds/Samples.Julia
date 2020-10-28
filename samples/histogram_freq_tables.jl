@@ -2,8 +2,9 @@ import Pkg
 Pkg.instantiate() # downloads all dependencies for the current project
 
 Pkg.add("Distributions")
+Pkg.add("Random")
 
-using StatsBase, StatsPlots, Distributions
+using StatsBase, StatsPlots, Distributions, Random
 
 # Example data 
 data = (randn(10_000), randn(10_000))

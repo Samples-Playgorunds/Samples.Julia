@@ -1,4 +1,4 @@
-using CSV, DataFrames, Feather, Gadfly, IJulia, JSON, RDatasets
+using CSV, DataFrames, Feather, Gadfly, IJulia, JSON, RDatasets, StatsBase
 
 # data = readdlm("iris_dataset.csv", ',')
 
@@ -22,7 +22,7 @@ for x in names(iris)[1:end-1]
     for y in names(iris)[1:end-1]
         println("$x /t $y /t $(cor(iris[x], iris[y]))")
     end
-    println("---------------------------------------------")
+    println("--------------------------------------------------")
 end
 
 # columns to array

@@ -13,4 +13,4 @@ h = fit(Histogram, rand(100), nbins=10)
 # h = fit(Histogram, (rand(100),rand(100)),nbins=10)
 
 display(h)
-plot(h)
+# plot(h)

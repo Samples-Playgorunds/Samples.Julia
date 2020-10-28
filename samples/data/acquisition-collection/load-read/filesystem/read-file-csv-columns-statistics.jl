@@ -15,7 +15,7 @@ data = CSV.read("../externals/Core.Math.Data/data/Pejcic_318.csv", copycols = tr
 # @show data.ATV
 # println()
 
-for col in eachcol(data,true); 
+for col in eachcol(data); 
     if  (
         eltype(col[2]) <: Real) 
         println(mean(col[2])

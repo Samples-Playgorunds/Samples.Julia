@@ -17,7 +17,7 @@ jobj = JSON.Parser.parse(str)
 println(jobj[1])
 
 cases = map(x -> get(x, "Cases", 0), jobj)
-plot(cases)
+plot(cases, xlabel = "Number of Cases")
 
 savefig("cases_simple.png") #Save plot as png image
 

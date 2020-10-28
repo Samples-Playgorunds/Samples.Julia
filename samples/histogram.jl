@@ -14,9 +14,9 @@ d = df.ANN
 
 # display(plot(histogram(a)));
 
-p1 = (plot(histogram(a)))
-p2 = (plot(histogram(b)))
-p3 = (plot(histogram(c)))
-p4 = (plot(histogram(d)))
+p1 = (histogram(a))
+p2 = (histogram(b))
+p3 = (histogram(c))
+p4 = (histogram(d))
 
 plot(p1, p2, p3, p4, layout = (2, 2), legend = false)
