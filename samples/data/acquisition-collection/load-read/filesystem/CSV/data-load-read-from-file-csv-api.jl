@@ -1,14 +1,18 @@
+#------------------------------------------------------------------------------------
 import Pkg
 Pkg.instantiate()
 Pkg.update()
 
-#------------------------------------------------------------------------------------
 # high level CSV API
 # https://juliadata.github.io/CSV.jl/stable/index.html
 # https://www.geeksforgeeks.org/working-with-csv-files-in-julia/
 Pkg.add("CSV")
 import CSV
 using CSV
+#------------------------------------------------------------------------------------
+
+file_path_csv = "../../../../../../externals/Core.Math.Data/data/Pejcic_318.csv"
+
 
 data = CSV.read(file_path_csv, copycols = true)
 

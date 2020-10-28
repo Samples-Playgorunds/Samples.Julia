@@ -1,17 +1,16 @@
 #-----------------------------------------------------------------------------------------------
 # 1st run - packages installation
 
-# ERROR: LoadError: ArgumentError: Package DataFrames not found in current path:
-# - Run `import Pkg; Pkg.add("DataFrames")` to install the DataFrames package.
-import Pkg; 
 import Pkg; 
 Pkg.add("CSV")
 Pkg.add("DataFrames")
 Pkg.add("StatsBase")
 
-#-----------------------------------------------------------------------------------------------
+file_path = "../../../../../../externals/Core.Math.Data/data/Pejcic_318.csv"
+
 using DataFrames, CSV, Statistics, StatsBase
-data = CSV.read("../externals/Core.Math.Data/data/Pejcic_318.csv", copycols = true)
+
+data = CSV.read(file_path, copycols = true)
 
 # @show data.ATV
 # println()
