@@ -12,6 +12,10 @@ Data Science Topics:
 
     [../samples/data/modeling/README.md](../samples/data/modeling/README.md)
 
+*   Data Analysis
+
+*   Data Representation
+
 ## References/Links
 
 *   https://per48.co/blog/julia-read-json-https-nba/
